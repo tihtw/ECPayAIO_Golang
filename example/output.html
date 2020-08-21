@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<form id="apiFrom" action="https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5" method="POST">
+			<input type="hidden" name="CheckMacValue" value="8D97430EEF473E977494B9535F4B28B3FCE06AAEE038DDA5939DE0752884D95F" />
+			<input type="hidden" name="ChoosePayment" value="Credit" />
+			<input type="hidden" name="DeviceSource" value="" />
+			<input type="hidden" name="EncryptType" value="1" />
+			<input type="hidden" name="ItemName" value="Apple iphone 7 手機殼#網紅小遙" />
+			<input type="hidden" name="MerchantID" value="2000132" />
+			<input type="hidden" name="MerchantTradeDate" value="2020/08/21 23:25:38" />
+			<input type="hidden" name="MerchantTradeNo" value="20200821232538" />
+			<input type="hidden" name="PaymentType" value="aio" />
+			<input type="hidden" name="ReturnURL" value="https://fec50e836a10.ngrok.io/QAQ" />
+			<input type="hidden" name="TotalAmount" value="1000" />
+			<input type="hidden" name="TradeDesc" value="%E4%BF%83%E9%8A%B7%E6%96%B9%E6%A1%88" />
+		</form>
+		<script type="text/javascript">
+			apiFrom.submit()
+		</script>
+	</body>
+</html>
