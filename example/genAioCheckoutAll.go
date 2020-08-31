@@ -25,7 +25,7 @@ func gen() {
 	c.SetMerchantTradeNo(time.Now().Format("20060102150405"))
 	c.SetReturnURL("https://fec50e836a10.ngrok.io/QAQ")
 
-	c.SeChoosePayment(ecpayaio.ChoosePaymentCredit)
+	c.SetChoosePayment(ecpayaio.ChoosePaymentCredit)
 
 	form, err := c.GeneratePostForm()
 	if err != nil {

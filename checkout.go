@@ -57,7 +57,7 @@ type Checkout struct {
 
 var (
 	HostStage      = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5"
-	HostProduction = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5"
+	HostProduction = "https://payment.ecpay.com.tw/Cashier/AioCheckOut/V5"
 )
 
 func NewCheckout(host string) *Checkout {
@@ -113,7 +113,7 @@ func (c *Checkout) SetItemName(values []string) {
 func (c *Checkout) SetReturnURL(value string) {
 	c.payload["ReturnURL"] = value
 }
-func (c *Checkout) SeChoosePayment(value ChoosePayment) {
+func (c *Checkout) SetChoosePayment(value ChoosePayment) {
 	c.payload["ChoosePayment"] = string(value)
 }
 func (c *Checkout) SetClientBackURL(value string) {
@@ -160,17 +160,17 @@ func (c *Checkout) SetInvoiceMark(value bool) {
 	c.payload["InvoiceMark"] = sv
 }
 
-func (c *Checkout) SetCustonField1(value string) {
-	c.payload["CustonField1"] = value
+func (c *Checkout) SetCustomField1(value string) {
+	c.payload["CustomField1"] = value
 }
-func (c *Checkout) SetCustonField2(value string) {
-	c.payload["CustonField2"] = value
+func (c *Checkout) SetCustomField2(value string) {
+	c.payload["CustomField2"] = value
 }
-func (c *Checkout) SetCustonField3(value string) {
-	c.payload["CustonField3"] = value
+func (c *Checkout) SetCustomField3(value string) {
+	c.payload["CustomField3"] = value
 }
-func (c *Checkout) SetCustonField4(value string) {
-	c.payload["CustonField4"] = value
+func (c *Checkout) SetCustomField4(value string) {
+	c.payload["CustomField4"] = value
 }
 func (c *Checkout) SetLanguage(value Language) {
 	c.payload["Language"] = string(value)
